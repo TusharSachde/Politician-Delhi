@@ -120,7 +120,7 @@ var startercontrollers = angular.module('starter.controllers', ['restservice'])
    
     //RestService.loadwall();
     
-    init();
+    //init();
     RestService.loadwall();
     
     $scope.loginData = {};
