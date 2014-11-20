@@ -43,7 +43,7 @@ function registerPushwooshAndroid() {
 			}
 
 			//and show alert
-			alert(title);
+			console.log(title);
 
 			//stopping geopushes
 			pushNotification.stopGeoPushes();
@@ -57,16 +57,16 @@ function registerPushwooshAndroid() {
 	//!!! Please note this is an API for PGB plugin. This code is different in CLI plugin!!!
 	//At the moment I cannot update the plugin to the latest version. TY PGB Team!
 	//see http://community.phonegap.com/nitobi/topics/malformed_xml_in_plugin_xml_file?utm_source=notification&utm_medium=email&utm_campaign=new_reply&utm_content=reply_button&reply%5Bid%5D=14224918#reply_14224918
-    pushNotification.registerDevice({ projectid: "1064980123221", appid : "864A5-72625" },
+    pushNotification.registerDevice({ projectid: "144489122646", appid : "C54A5-E8DF6" },
 		function(token)
 		{
-			alert(token);
+			console.log('Registered'+token);
 			//callback when pushwoosh is ready
 			onPushwooshAndroidInitialized(token);
 		},
 		function(status)
 		{
-			alert("failed to register: " +  status);
+			console.log("failed to register: " +  status);
 		    console.warn(JSON.stringify(['failed to register ', status]));
 		}
 	);
