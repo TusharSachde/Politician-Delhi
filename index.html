@@ -46,11 +46,11 @@
                 function(status) {
                     //this is push token
                     var pushToken = status;
-                    console.log('Registered to pushwoosh');
+                    alert('Registered to pushwoosh');
                     console.warn('push token: ' + pushToken);
                 },
                 function(status) {
-                    console.log('Failed to register to pushwoosh');
+                    alert('Failed to register to pushwoosh');
                     console.warn(JSON.stringify(['failed to register ', status]));
                 }
             );
