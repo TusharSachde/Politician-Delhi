@@ -16,7 +16,7 @@
     <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="com.pushwoosh.plugins.pushwoosh" version="3.0.2" />
     <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.0" />
-
+    <gap:plugin name="com.adobe.plugins.gaplugin" version="2.3.1" />
 
     <icon src="logo-512.png" />
     <gap:splash src="img/splash.png" />

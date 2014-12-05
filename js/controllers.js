@@ -1,6 +1,8 @@
 var startercontrollers = angular.module('starter.controllers', ['restservice'])
 
 .controller('AppCtrl', function ($scope, $ionicModal, $timeout, RestService) {
+    
+    
     // Form data for the login modal
     $scope.loginData = {};
     
@@ -209,10 +211,12 @@ var startercontrollers = angular.module('starter.controllers', ['restservice'])
 		$scope.walldata[index].media="play";
 	};
     
-    $scope.sharetext=function(text) {
+    $scope.sharetext=function(text,id) {
+        sendtoga("Text Share : "+id+" : "+text);
         window.plugins.socialsharing.share(text);
     };
-    $scope.shareimage=function(image) {
+    $scope.shareimage=function(image,id) {
+        sendtoga("Image Share: "+id+" : "+ image);
         window.plugins.socialsharing.share(null, null, image, null);
     };
 	$scope.sharemedia=function(media) {
