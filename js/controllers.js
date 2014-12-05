@@ -1,7 +1,7 @@
 var startercontrollers = angular.module('starter.controllers', ['restservice'])
 
 .controller('AppCtrl', function ($scope, $ionicModal, $timeout, RestService) {
-    
+    sendtoga("App started");
     
     // Form data for the login modal
     $scope.loginData = {};
